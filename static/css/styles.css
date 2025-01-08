@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Hiệu ứng làm mờ khi hover */
+.card.hover-blur:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Text tràn dòng thì thu gọn */
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
+    -webkit-box-orient: vertical;
+}
